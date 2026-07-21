@@ -1,0 +1,298 @@
+{% extends 'base.html' %}
+
+{% block title %}Top Clubs in Noida{% endblock title %}
+
+{% block body %}
+
+<style>
+    .club-card {
+        display: flex;
+        background: black;
+        margin: 20px auto;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        width: 85%;
+        transition: 0.3s;
+    }
+
+    .club-card:hover {
+        transform: scale(1.02);
+    }
+
+    .club-card img {
+        width: 300px;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .club-info {
+        padding: 20px;
+    }
+</style>
+
+<h1 class="text-center my-5">Top Clubs in Noida</h1>
+
+<!-- 1 -->
+
+<div class="club-card">
+    <img src="/static/img/rubarru.jpg" class="card-img-top">
+    <div class="club-info">
+        <h2>Rubarru</h2>
+        <p><strong>Rating:</strong> ⭐ 4.2 (906)</p>
+        <p><strong>Address:</strong> Gardens Galleria Mall, Sector 38, Noida </p>
+        <p><strong>Minimum Charges:</strong> ₹2,500 for two </p>
+        <p><strong>Entry Type:</strong> Couple allowed, Stag may have cover charges</p>
+        <p><strong>Phone:</strong> +91 98910 61110 </p>
+        <p><strong>Timings:</strong> 12 PM - 1 AM</p>
+        <p><strong>Website:</strong> <a href="https://rubarru.com/" target="_blank">https://rubarru.com/</a>
+        </p>
+    </div>
+</div>
+
+
+
+<div class="club-card">
+    <img src="/static/img/img1.jpg" class="card-img-top">
+    <div class="club-info">
+        <h2>Lvl one by Clinque</h2>
+        <p><strong>Rating:</strong> ⭐ 4.6 (316)</p>
+        <p><strong>Address:</strong> Gardens Galleria Mall, Sector 38, Noida </p>
+        <p><strong>Minimum Charges:</strong> ₹2,700 for two </p>
+        <p><strong>Entry Type:</strong> Couple allowed, Stag may have cover charges</p>
+        <p><strong>Phone:</strong> +91 87509 70970 </p>
+        <p><strong>Timings:</strong> Closes - 1 AM</p>
+        <p><strong>Instagram:</strong><a href="https://www.instagram.com/levelonebyclinque" target="_blank"
+                rel="noopener noreferrer">@levelonebyclinque</a></p>
+    </div>
+</div>
+
+
+
+<div class="club-card">
+    <img src="/static/img/noida1.jpg" class="card-img-top">
+    <div class="club-info">
+        <h2>Sutra</h2>
+        <p><strong>Rating:</strong> ⭐ 4.1 (1116+)</p>
+        <p><strong>Address:</strong> Gardens Galleria Mall, Sector 38, Noida </p>
+        <p><strong>Minimum Charges:</strong> ₹4,500 for two </p>
+        <p><strong>Entry Type:</strong> Couple allowed, Stag may have cover charges</p>
+        <p><strong>Phone:</strong> +91 98910 61110 </p>
+        <p><strong>Timings:</strong> Closes - 1 AM</p>
+        <p><strong>Instagram:</strong><a href="https://www.instagram.com/sutra_noida" target="_blank"
+                rel="noopener noreferrer"> @Sutra_noida </a></p>
+    </div>
+</div>
+
+
+
+<div class="club-card">
+    <img src="/static/img/lever.jpg" class="card-img-top">
+    <div class="club-info">
+        <h2>Levernasia</h2>
+        <p><strong>Rating:</strong> ⭐ 4.5 (912)</p>
+        <p><strong>Address:</strong> Gardens Galleria Mall, Sector 38, Noida </p>
+        <p><strong>Minimum Charges:</strong> ₹1,200 for two </p>
+        <p><strong>Entry Type:</strong> Couple allowed, Stag may have cover charges</p>
+        <p><strong>Phone:</strong> +91 98910 61110 </p>
+        <p><strong>Timings:</strong> Closes - 1 AM</p>
+        <p><strong>Instagram:</strong><a href="https://www.instagram.com/levernasia_la" target="_blank"
+                rel="noopener noreferrer"> @Levernasia_la </a></p>
+    </div>
+</div>
+
+
+
+<div class="club-card">
+    <img src="/static/img/lord.jpg" class="card-img-top">
+    <div class="club-info">
+        <h2>Lord of the Drinks</h2>
+        <p><strong>Rating:</strong> ⭐ 4.8 (516)</p>
+        <p><strong>Address:</strong> Gardens Galleria Mall, Sector 38, Noida </p>
+        <p><strong>Minimum Charges:</strong> ₹3,500 for two </p>
+        <p><strong>Entry Type:</strong> Couple allowed, Stag may have cover charges</p>
+        <p><strong>Phone:</strong> +91 74174 13636 </p>
+        <p><strong>Timings:</strong> Closes - 1 AM</p>
+        <p><strong>Instagram:</strong><a href="https://www.instagram.com/lordofthedrinksnoida" target="_blank"
+                rel="noopener noreferrer"> @Lordofthedrinksnoida </a></p>
+    </div>
+</div>
+
+
+
+<div class="club-card">
+    <img src="/static/img/lux.jpg" class="card-img-top">
+    <div class="club-info">
+        <h2>Millionaire The Lux Club</h2>
+        <p><strong>Rating:</strong> ⭐ 4.2 (641) </p>
+        <p><strong>Address:</strong> 2nd Floor, Plot A2, Gardens Galleria Mall, Sector 38, Noida </p>
+        <p><strong>Minimum Charges:</strong> ₹4,000 for two</p>
+        <p><strong>Entry Type:</strong> Stag & Couple allowed</p>
+        <p><strong>Phone:</strong> +91 96675 11431 </p>
+        <p><strong>Timings:</strong> 12 PM - 11:45 PM </p>
+        <p><strong>Instagram:</strong><a href="https://www.instagram.com/millionairetheluxclub" target="_blank"
+                rel="noopener noreferrer"> @millionairetheluxclub</a></p>
+    </div>
+</div>
+
+
+
+
+
+<div class="club-card">
+    <img src="/static/img/time.jpg" class="card-img-top">
+    <div class="club-info">
+        <h2>Time Machine</h2>
+        <p><strong>Rating:</strong> ⭐ 4.1 (1,300+)</p>
+        <p><strong>Address:</strong> First Floor, Shop 241, Gardens Galleria Mall, Sector 38A, Noida </p>
+        <p><strong>Minimum Charges:</strong> ₹1,800 for two </p>
+        <p><strong>Entry Type:</strong> Stag & Couple allowed</p>
+        <p><strong>Phone:</strong> +91 98183 36663 </p>
+        <p><strong>Timings:</strong> 12 PM - 2 AM </p>
+        <p><strong>Instagram:</strong><a href="https://www.instagram.com/thetimemachinenoida" target="_blank"
+                rel="noopener noreferrer"> @thetimemachinenoida </a></p>
+    </div>
+</div>
+
+
+
+
+<div class="club-card">
+    <img src="/static/img/illuzion.jpg" class="card-img-top">
+    <div class="club-info">
+        <h2>Illuzion Luxe Club</h2>
+        <p><strong>Rating:</strong> ⭐ 4.0 (116)</p>
+        <p><strong>Address:</strong> Gardens Galleria Mall, Sector 38, Noida </p>
+        <p><strong>Minimum Charges:</strong> ₹2,200 for two </p>
+        <p><strong>Entry Type:</strong> Couple allowed, Stag may have cover charges</p>
+        <p><strong>Phone:</strong> +91 93112 26466 </p>
+        <p><strong>Timings:</strong> 12 PM - 1 AM</p>
+        <p><strong>Instagram:</strong><a href="https://www.instagram.com/illuzion_noida" target="_blank"
+                rel="noopener noreferrer"> @illuzion_noida </a></p>
+    </div>
+</div>
+
+
+
+<div class="club-card">
+    <img src="/static/img/oscar.jpg" class="card-img-top">
+    <div class="club-info">
+        <h2>Oscar Luxe Club & Air Bar</h2>
+        <p><strong>Rating:</strong> ⭐ 4.1 (1,300+)</p>
+        <p><strong>Address:</strong> First Floor, Shop 241, Gardens Galleria Mall, Sector 38A, Noida </p>
+        <p><strong>Minimum Charges:</strong> ₹2,500 for two </p>
+        <p><strong>Entry Type:</strong> Stag & Couple allowed</p>
+        <p><strong>Phone:</strong> +91 98183 36663 </p>
+        <p><strong>Timings:</strong> 12 PM - 2 AM </p>
+        <p><strong>Instagram:</strong><a href="https://www.instagram.com/oscar.noida" target="_blank"
+                rel="noopener noreferrer"> @Oscar.noida </a></p>
+    </div>
+</div>
+
+
+
+<div class="club-card">
+    <img src="/static/img/fbar.jpg" class="card-img-top">
+    <div class="club-info">
+        <h2>FBar and Lounge</h2>
+        <p><strong>Rating:</strong> ⭐ 4.9 (1,800+)</p>
+        <p><strong>Address: </strong> Gardens Galleria Mall 2, 105A PLOT NO A, Sector 38, Noida</p>
+        <p><strong>Minimum Charges:</strong> ₹4,500 for two</p>
+        <p><strong>Entry Type:</strong> Couple Allowed</p>
+        <p><strong>Phone: </strong> 091117 57999</p>
+        <p><strong>Timings: </strong> 12 PM - 2 AM</p>
+        <p><strong>Instagram:</strong><a href="https://www.instagram.com/floungebyftvnoida" target="_blank"
+                rel="noopener noreferrer"> @Floungebyftvnoida </a></p>
+    </div>
+</div>
+
+
+
+<div class="club-card">
+    <img src="/static/img/imperfecto.jpg" class="card-img-top">
+    <div class="club-info">
+        <h2>Imperfecto</h2>
+        <p><strong>Rating:</strong> ⭐ 4.0 (216)</p>
+        <p><strong>Address:</strong> Gardens Galleria Mall, Sector 38, Noida </p>
+        <p><strong>Minimum Charges:</strong> ₹4,000 for two </p>
+        <p><strong>Entry Type:</strong> Couple allowed, Stag may have cover charges</p>
+        <p><strong>Phone:</strong> 91+ 99991 23206 </p>
+        <p><strong>Timings:</strong> 12 PM - 1 AM</p>
+        <p><strong>Instagram:</strong><a href="https://www.instagram.com/imperfectogardensgalleria" target="_blank"
+                rel="noopener noreferrer"> @imperfectogardensgalleria </a></p>
+    </div>
+</div>
+<div class="club-card">
+    <img src="/static/img/big.jpg" class="card-img-top">
+    <div class="club-info">
+        <h2>Big Boyz Lounge</h2>
+        <p><strong>Rating:</strong> ⭐ 4.4 (926)</p>
+        <p><strong>Address:</strong> Gardens Galleria Mall, Sector 38, Noida </p>
+        <p><strong>Minimum Charges:</strong> ₹3,200 for two </p>
+        <p><strong>Entry Type:</strong> Couple allowed, Stag may have cover charges</p>
+        <p><strong>Phone:</strong> +91 98910 61110 </p>
+        <p><strong>Timings:</strong> Closes - 1 AM</p>
+        <p><strong>Instagram:</strong><a href="https://www.instagram.com/bigboyzloungegardensgalleria" target="_blank"
+                rel="noopener noreferrer"> @bigboyzloungegardensgalleria </a></p>
+    </div>
+</div>
+<div class="club-card">
+    <img src="/static/img/paso.jpg" class="card-img-top">
+    <div class="club-info">
+        <h2>PASO</h2>
+        <p><strong>Rating:</strong> ⭐ 4.9 (754)</p>
+        <p><strong>Address:</strong> Gardens Galleria Mall, Sector 38, Noida </p>
+        <p><strong>Minimum Charges:</strong> ₹3,700 for two </p>
+        <p><strong>Entry Type:</strong> Couple allowed, Stag may have cover charges</p>
+        <p><strong>Phone:</strong> +91 97171 78428 </p>
+        <p><strong>Timings:</strong> Closes - 1 AM</p>
+        <p><strong>Instagram:</strong><a href="https://www.instagram.com/paso_noida" target="_blank"
+                rel="noopener noreferrer"> @Paso_noida </a></p>
+    </div>
+</div>
+
+<div class="club-card">
+    <img src="/static/img/smoke.jpg" class="card-img-top">
+    <div class="club-info">
+        <h2>The Smoke Factory</h2>
+        <p><strong>Rating:</strong> ⭐ 4.0 (665)</p>
+        <p><strong>Address:</strong> Gardens Galleria Mall, Sector 38, Noida </p>
+        <p><strong>Minimum Charges:</strong> ₹2,500 for two </p>
+        <p><strong>Entry Type:</strong> Couple allowed, Stag may have cover charges</p>
+        <p><strong>Phone:</strong> +91 74289 21115 </p>
+        <p><strong>Timings:</strong> Closes - 1 AM</p>
+        <p><strong>Instagram:</strong><a href="https://www.instagram.com/ext.thesmokefactorynoida" target="_blank"
+                rel="noopener noreferrer"> @ext.thesmokefactorynoida </a></p>
+    </div>
+</div>
+
+
+<div class="club-card">
+    <img src="/static/img/objection.jpg" class="card-img-top">
+    <div class="club-info">
+        <h2>No Objection House</h2>
+        <p><strong>Rating:</strong> ⭐ 4.0 (916)</p>
+        <p><strong>Address:</strong> Gardens Galleria Mall, Sector 38, Noida </p>
+        <p><strong>Minimum Charges:</strong> ₹2,200 for two </p>
+        <p><strong>Entry Type:</strong> Couple allowed, Stag may have cover charges</p>
+        <p><strong>Timings:</strong> Closes - 1 AM</p>
+        <p><strong>Facebook:</strong><a href="https://www.facebook.com/No Objection House Club " target="_blank"
+                rel="noopener noreferrer"> @No Objection House Club </a></p>
+    </div>
+</div>
+<div class="club-card">
+    <img src="/static/img/toy.jpg" class="card-img-top">
+    <div class="club-info">
+        <h2>Toy Boy</h2>
+        <p><strong>Rating:</strong> ⭐ 4.0 (916)</p>
+        <p><strong>Address:</strong> Gardens Galleria Mall, Sector 38, Noida </p>
+        <p><strong>Minimum Charges:</strong> ₹3,500 for two </p>
+        <p><strong>Entry Type:</strong> Couple allowed, Stag may have cover charges</p>
+        <p><strong>Phone:</strong> +91 98111 82474 </p>
+        <p><strong>Timings:</strong> Closes - 1 AM</p>
+        <p><strong>Instagram:</strong><a href="https://www.instagram.com/toyboyindia" target="_blank"
+                rel="noopener noreferrer"> @toyboyindia </a></p>
+    </div>
+</div>
+
+{% endblock body %}

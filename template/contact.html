@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+
+{% block title %} Contact {% endblock title %}
+
+{% block body %}
+
+<style>
+    #mypic {
+        width: 400px;
+        /* size control */
+        height: 280px;
+        object-fit: cover;
+        /* image stretch na ho */
+    }
+    
+</style>
+<div class="container my-5">
+
+    <!-- Heading -->
+    <h1 class="text-center mb-4">Contact Us</h1>
+    <p class="text-center mb-5" style="color:#ff0055;">
+    Feel free to reach out to us for any queries or support.
+</p>
+
+    <!-- Contact Form (Center Top) -->
+    <div class="row justify-content-center mb-5">
+        <div class="col-md-6">
+            <div class="card shadow p-4">
+
+                <h4 class="mb-3">Send us a message</h4>
+
+                <form method="post">
+                    {% csrf_token %}
+
+                    <div class="mb-3">
+                        <label class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" name="phone"
+                            placeholder="Enter your phone number" pattern="[0-9]{10}" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="desc">Message</label>
+                        <textarea class="form-control" rows="3" id="desc" name="desc"
+                            placeholder="Write your message"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-dark w-100">
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Images (Bottom) -->
+    <div class="row text-center">
+
+        <div class="col-md-4 mb-3">
+            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d" class="img-fluid rounded"
+                alt="Support Image">
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <img src="/static/img/me.jpg" class="img-fluid rounded" id="mypic" alt="My Image">
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216" class="img-fluid rounded"
+                alt="Contact Image">
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock body %}

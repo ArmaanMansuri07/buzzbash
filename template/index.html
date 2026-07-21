@@ -1,0 +1,166 @@
+{% extends 'base.html' %}
+
+{% block title %} Home {% endblock title %}
+
+{% block body %}
+
+<style>
+    body {
+        background-color: #0f0f0f;
+        color: white;
+    }
+
+    .carousel-caption {
+        background: rgba(0,0,0,0.6);
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .card {
+        background-color: #1a1a1a;
+        color: white;
+        border: none;
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    .btn-dark {
+        background-color: #ff0055;
+        border: none;
+    }
+
+    .btn-dark:hover {
+        background-color: #cc0044;
+    }
+</style>
+
+<!-- 🔥 HERO CAROUSEL -->
+<div class="container mt-3">
+    <div id="carouselExampleCaptions" class="carousel slide">
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="/static/img/img1.jpg" class="d-block w-100" style="height:600px; object-fit:cover;">
+                <div class="carousel-caption">
+                    <h2>Experience Delhi NCR Nightlife</h2>
+                    <p>Top clubs, DJs, and unforgettable nights.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- 🔥 INTRO SECTION -->
+<section class="text-center container py-5">
+    <h1 class="fw-light">BuzzBash Nightlife</h1>
+    <p class="lead text-secondary">
+        Discover the best clubs, bars, and nightlife destinations in Delhi NCR.
+        From luxury lounges to high-energy dance floors — find your perfect night.
+    </p>
+
+    <a href="{% url 'clubs' %}" class="btn btn-danger">Plan Your Night 🍾</a>
+</section>
+
+<!-- 🔥 CITY SECTION -->
+<div class="container my-5">
+    <h2 class="text-center mb-5">Top Cities</h2>
+
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="/static/img/delhi.jpg" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5>Delhi</h5>
+                    <p>Premium clubs & elite nightlife experience.</p>
+                    <a href="{% url 'delhi' %}" class="btn btn-dark">Explore</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="/static/img/noida1.jpg" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5>Noida</h5>
+                    <p>Trendy clubs and vibrant party spots.</p>
+                    <a href="{% url 'noida' %}" class="btn btn-dark">Explore</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="/static/img/gurugram1.jpg" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5>Gurugram</h5>
+                    <p>Luxury nightlife and rooftop parties.</p>
+                    <a href="{% url 'gurugram' %}" class="btn btn-dark">Explore</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- 🔥 CLUB CATEGORIES -->
+<div class="container my-5">
+    <h2 class="text-center mb-5">Explore by Vibe</h2>
+
+    <div class="row g-4">
+
+        <!-- Dance Clubs -->
+        <div class="col-md-3">
+            <div class="card text-center h-100">
+                <img src="/static/img/dance.jpg" class="card-img-top" style="height:200px; object-fit:cover;">
+                <div class="card-body">
+                    <h5>💃 Dance Clubs</h5>
+                    <p>High-energy dance floors & DJ nights.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lounge Bars -->
+        <div class="col-md-3">
+            <div class="card text-center h-100">
+                <img src="/static/img/lounge.jpg" class="card-img-top" style="height:200px; object-fit:cover;">
+                <div class="card-body">
+                    <h5>🍸 Lounge Bars</h5>
+                    <p>Chill vibes with music & drinks.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- EDM Clubs -->
+        <div class="col-md-3">
+            <div class="card text-center h-100">
+                <img src="/static/img/edm.jpg" class="card-img-top" style="height:200px; object-fit:cover;">
+                <div class="card-body">
+                    <h5>🎧 EDM Clubs</h5>
+                    <p>Electronic beats & DJ parties.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Luxury Clubs -->
+        <div class="col-md-3">
+            <div class="card text-center h-100">
+                <img src="/static/img/luxury.jpg" class="card-img-top" style="height:200px; object-fit:cover;">
+                <div class="card-body">
+                    <h5>🍾 Luxury Clubs</h5>
+                    <p>Premium nightlife & elite crowd.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+{% endblock body %}

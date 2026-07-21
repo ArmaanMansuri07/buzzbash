@@ -1,0 +1,197 @@
+{% extends 'base.html' %}
+{% block title %}Top Clubs in Gurugram{% endblock title %}
+
+{% block body %}
+
+<style>
+
+body{
+background:#000;
+color:white;
+}
+
+.club-card{
+display:flex;
+background:#111;
+margin:25px auto;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 8px 25px rgba(0,0,0,0.5);
+width:85%;
+transition:0.3s;
+}
+
+.club-card:hover{
+transform:scale(1.02);
+}
+
+.club-card img{
+width:320px;
+height:230px;
+object-fit:cover;
+}
+
+.club-info{
+padding:20px;
+}
+
+.club-info a{
+color:#ff4d6d;
+text-decoration:none;
+}
+
+</style>
+
+<h1 class="text-center my-5">Top Clubs in Gurugram</h1>
+
+<!-- 1 -->
+
+<div class="club-card">
+    <img src="/static/img/bw.jpg" class="card-img-top">
+<div class="club-info">
+<h2>Club BW</h2>
+<p><strong>Rating:</strong> ⭐ 4.1</p>
+<p><strong>Address:</strong> Sector 29, Gurugram</p>
+<p><strong>Minimum Charges:</strong> ₹2500–₹4000</p>
+<p><strong>Entry Type:</strong> Couples preferred</p>
+<p><strong>Timings:</strong> Till 1 AM</p>
+<p><strong>Facebook:</strong> <a href="#">@ClubBW</a></p>
+</div>
+</div>
+
+<!-- 2 -->
+
+<div class="club-card">
+    <img src="/static/img/prankster.jpg" class="card-img-top">
+<div class="club-info">
+<h2>Prankster</h2>
+<p><strong>Rating:</strong> ⭐ 4.2</p>
+<p><strong>Address:</strong> Sector 29</p>
+<p><strong>Minimum Charges:</strong> ₹2000–₹3000</p>
+<p><strong>Entry Type:</strong> Open crowd</p>
+<p><strong>Timings:</strong> Till 12:30 AM</p>
+<p><strong>Facebook:</strong> <a href="#">@Prankster</a></p>
+</div>
+</div>
+
+<!-- 3 -->
+
+<div class="club-card">
+    <img src="/static/img/walking.jpg" class="card-img-top">
+<div class="club-info">
+<h2>Walking Street</h2>
+<p><strong>Rating:</strong> ⭐ 4.0</p>
+<p><strong>Address:</strong> Sector 29</p>
+<p><strong>Minimum Charges:</strong> ₹1800–₹2500</p>
+<p><strong>Entry Type:</strong> Casual</p>
+<p><strong>Timings:</strong> Till 12 AM</p>
+<p><strong>Facebook:</strong> <a href="#">@WalkingStreet</a></p>
+</div>
+</div>
+
+<!-- 4 -->
+
+<div class="club-card">
+    <img src="/static/img/open.jpg" class="card-img-top">
+<div class="club-info">
+<h2>Open Tap</h2>
+<p><strong>Rating:</strong> ⭐ 4.2</p>
+<p><strong>Address:</strong> Golf Course Road</p>
+<p><strong>Minimum Charges:</strong> ₹2500–₹3500</p>
+<p><strong>Entry Type:</strong> Couples preferred</p>
+<p><strong>Timings:</strong> Till 1 AM</p>
+<p><strong>Facebook:</strong> <a href="#">@OpenTap</a></p>
+</div>
+</div>
+
+<!-- 5 -->
+
+<div class="club-card">
+    <img src="/static/img/vapour.jpg" class="card-img-top">
+<div class="club-info">
+<h2>Vapour Bar Exchange</h2>
+<p><strong>Rating:</strong> ⭐ 4.1</p>
+<p><strong>Address:</strong> Sector 29</p>
+<p><strong>Minimum Charges:</strong> ₹2000–₹3000</p>
+<p><strong>Entry Type:</strong> Open</p>
+<p><strong>Timings:</strong> Till 12:30 AM</p>
+<p><strong>Facebook:</strong> <a href="#">@Vapour</a></p>
+</div>
+</div>
+
+<!-- 6 -->
+
+<div class="club-card">
+    <img src="/static/img/ministry.jpg" class="card-img-top">
+<div class="club-info">
+<h2>Ministry of Beer</h2>
+<p><strong>Rating:</strong> ⭐ 4.3</p>
+<p><strong>Address:</strong> Cyber Hub</p>
+<p><strong>Minimum Charges:</strong> ₹2500–₹4000</p>
+<p><strong>Entry Type:</strong> Premium crowd</p>
+<p><strong>Timings:</strong> Till 1 AM</p>
+<p><strong>Facebook:</strong> <a href="#">@MinistryOfBeer</a></p>
+</div>
+</div>
+
+<!-- 7 -->
+
+<div class="club-card">
+    <img src="/static/img/where.jpg" class="card-img-top">
+<div class="club-info">
+<h2>Where Else</h2>
+<p><strong>Rating:</strong> ⭐ 4.0</p>
+<p><strong>Address:</strong> Golf Course Road</p>
+<p><strong>Minimum Charges:</strong> ₹2000–₹3000</p>
+<p><strong>Entry Type:</strong> Casual</p>
+<p><strong>Timings:</strong> Till 12 AM</p>
+<p><strong>Facebook:</strong> <a href="#">@WhereElse</a></p>
+</div>
+</div>
+
+<!-- 8 -->
+
+<div class="club-card">
+    <img src="/static/img/downtown.jpg" class="card-img-top">
+<div class="club-info">
+<h2>Downtown</h2>
+<p><strong>Rating:</strong> ⭐ 4.2</p>
+<p><strong>Address:</strong> Sector 29</p>
+<p><strong>Minimum Charges:</strong> ₹2500–₹3500</p>
+<p><strong>Entry Type:</strong> Couples preferred</p>
+<p><strong>Timings:</strong> Till 1 AM</p>
+<p><strong>Facebook:</strong> <a href="#">@Downtown</a></p>
+</div>
+</div>
+
+<!-- 9 -->
+
+<div class="club-card">
+    <img src="/static/img/ampm.jpg" class="card-img-top">
+<div class="club-info">
+<h2>AMPM Café & Bar</h2>
+<p><strong>Rating:</strong> ⭐ 4.3</p>
+<p><strong>Address:</strong> Golf Course Road</p>
+<p><strong>Minimum Charges:</strong> ₹3000–₹4000</p>
+<p><strong>Entry Type:</strong> Premium</p>
+<p><strong>Timings:</strong> Till 1 AM</p>
+<p><strong>Facebook:</strong> <a href="#">@AMPM</a></p>
+</div>
+</div>
+
+<!-- 10 -->
+
+<div class="club-card">
+    <img src="/static/img/21.jpg" class="card-img-top">
+<div class="club-info">
+<h2>21 Shots</h2>
+<p><strong>Rating:</strong> ⭐ 4.1</p>
+<p><strong>Address:</strong> Sector 29</p>
+<p><strong>Minimum Charges:</strong> ₹2000–₹3000</p>
+<p><strong>Entry Type:</strong> Open crowd</p>
+<p><strong>Timings:</strong> Till 12:30 AM</p>
+<p><strong>Facebook:</strong> <a href="#">@21Shots</a></p>
+</div>
+</div>
+
+{% endblock body %}

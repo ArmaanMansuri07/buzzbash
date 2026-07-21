@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+
+{% block title %} Plan Your Night {% endblock title %}
+
+{% block body %}
+
+<style>
+    .section-card {
+        background-color: #1a1a1a;
+        padding: 20px;
+        border-radius: 12px;
+        transition: 0.3s;
+    }
+
+    .section-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 25px rgba(255, 0, 85, 0.4);
+    }
+
+    .icon {
+        font-size: 28px;
+    }
+</style>
+
+<div class="container my-5">
+
+    <!-- 🔥 Heading -->
+    <div class="text-center mb-5">
+        <h1>🍾 Plan Your Night</h1>
+        <p class="text-secondary">Everything you need for a perfect nightlife experience in Delhi NCR</p>
+    </div>
+
+    <div class="row g-4">
+
+        <!-- 🗓 Best Day -->
+        <div class="col-md-4">
+            <div class="section-card">
+                <h4 class="icon">🗓 Best Day to Go</h4>
+                <p>Friday & Saturday → Full party vibe 🔥</p>
+                <p>Wednesday → Ladies Night 💃</p>
+                <p>Sunday → Chill & relaxed vibe</p>
+            </div>
+        </div>
+
+        <!-- 💰 Entry Fees -->
+        <div class="col-md-4">
+            <div class="section-card">
+                <h4 class="icon">💰 Entry Fees</h4>
+                <p>Delhi: ₹2000 – ₹5000</p>
+                <p>Noida: ₹1500 – ₹3000</p>
+                <p>Gurugram: ₹3000 – ₹8000</p>
+            </div>
+        </div>
+
+        <!-- 👔 Dress Code -->
+        <div class="col-md-4">
+            <div class="section-card">
+                <h4 class="icon">👔 Dress Code</h4>
+                <p>Men: Shirt + Jeans + Shoes ✔</p>
+                <p>No slippers or shorts ❌</p>
+                <p>Women: Party wear / western outfits 💃</p>
+            </div>
+        </div>
+
+        <!-- ⏰ Timing -->
+        <div class="col-md-4">
+            <div class="section-card">
+                <h4 class="icon">⏰ Timing</h4>
+                <p>Open: 8 PM</p>
+                <p>Peak Time: 11 PM – 1 AM 🔥</p>
+                <p>Close: 3 AM</p>
+            </div>
+        </div>
+
+        <!-- 💡 Tips -->
+        <div class="col-md-4">
+            <div class="section-card">
+                <h4 class="icon">💡 Pro Tips</h4>
+                <p>✔ Early entry = cheaper</p>
+                <p>✔ Table booking recommended</p>
+                <p>✔ Carry valid ID</p>
+                <p>✔ Weekends are crowded</p>
+            </div>
+        </div>
+
+        <!-- ⭐ Suggested Clubs -->
+        <div class="col-md-4">
+            <div class="section-card">
+                <h4 class="icon">⭐ Suggested Clubs</h4>
+                <p>Delhi: Kitty Su, Privee</p>
+                <p>Noida: Imperfecto</p>
+                <p>Gurugram: Soho Club</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock body %}

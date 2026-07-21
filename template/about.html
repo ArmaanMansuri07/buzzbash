@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+
+{% block title %} About {% endblock title %}
+
+{% block body %}
+
+<style>
+    .about-section {
+        padding: 60px 0;
+    }
+
+    .about-img {
+        border-radius: 15px;
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+
+    .feature-box {
+        background: #1a1a1a;
+        padding: 20px;
+        border-radius: 12px;
+        transition: 0.3s;
+        height: 100%;
+    }
+
+    .feature-box:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 25px rgba(255, 0, 85, 0.4);
+    }
+</style>
+
+<div class="container about-section">
+
+    <!-- 🔥 Heading -->
+    <div class="text-center mb-5">
+        <h1>About BuzzBash</h1>
+        <p class="text-secondary">Your ultimate guide to nightlife in Delhi, Noida & Gurugram</p>
+    </div>
+
+    <!-- 🔥 Section 1 -->
+    <div class="row align-items-center mb-5">
+        <div class="col-md-6">
+            <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30" class="about-img">
+        </div>
+        <div class="col-md-6">
+            <h2>Who We Are</h2>
+            <p>
+                BuzzBash is a modern nightlife discovery platform designed to help users explore the best clubs,
+                lounges, and party destinations across Delhi NCR. Whether you're looking for a high-energy dance floor,
+                a luxury lounge, or a chill rooftop vibe — we’ve got you covered.
+            </p>
+        </div>
+    </div>
+
+    <!-- 🔥 Section 2 -->
+    <div class="row align-items-center mb-5 flex-md-row-reverse">
+        <div class="col-md-6">
+            <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de" class="about-img">
+        </div>
+        <div class="col-md-6">
+            <h2>What We Offer</h2>
+            <p>
+                We provide curated lists of top clubs, trending nightlife spots, and detailed insights to help you
+                choose the perfect place for your night. From club categories to nightlife planning guides — everything
+                is designed to enhance your experience.
+            </p>
+        </div>
+    </div>
+
+    <!-- 🔥 Features -->
+    <div class="text-center mb-4">
+        <h2>Why Choose Us</h2>
+    </div>
+
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <div class="feature-box">
+                <h4>🔥 Trending Clubs</h4>
+                <p>Stay updated with the most happening clubs in your city.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="feature-box">
+                <h4>🎧 Explore by Vibe</h4>
+                <p>Find clubs based on your mood — EDM, Lounge, Dance & more.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="feature-box">
+                <h4>🍾 Night Planning</h4>
+                <p>Get tips on timing, budget, and dress code for the perfect night.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 🔥 Final Section -->
+    <div class="text-center mt-5">
+        <h3>Experience Nightlife Like Never Before 🌃</h3>
+        <p class="text-secondary">BuzzBash makes your nightlife smarter, easier, and more exciting.</p>
+    </div>
+
+</div>
+
+{% endblock body %}

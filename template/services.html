@@ -1,0 +1,206 @@
+{% extends 'base.html' %}
+
+{% block title %} Services {% endblock title %}
+
+{% block body %}
+
+<style>
+    .service-card {
+        background-color: #1a1a1a;
+        padding: 20px;
+        border-radius: 12px;
+        transition: 0.3s;
+        height: 100%;
+    }
+
+    .service-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 25px rgba(255, 0, 85, 0.4);
+    }
+
+    .section-box {
+        background: #1a1a1a;
+        border-radius: 12px;
+        padding: 20px;
+        transition: 0.3s;
+        height: 100%;
+    }
+
+    .section-box:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 25px rgba(255, 0, 85, 0.4);
+    }
+
+    .section-title {
+        color: #ff0055;
+        margin-bottom: 15px;
+    }
+
+    ul {
+        padding-left: 18px;
+    }
+
+    ul li {
+        margin-bottom: 6px;
+    }
+</style>
+
+<div class="container my-5">
+
+    <!-- 🔥 WEBSITE SERVICES -->
+    <div class="text-center mb-5">
+        <h1>Our Services</h1>
+        <p class="text-secondary">Explore what BuzzBash offers for the best nightlife experience</p>
+    </div>
+
+    <div class="row g-4 mb-5">
+
+        <div class="col-md-4">
+            <div class="service-card">
+                <h4>🌆 City-wise Club Discovery</h4>
+                <p>Find the best clubs in Delhi, Noida, and Gurugram.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="service-card">
+                <h4>🔥 Trending Clubs</h4>
+                <p>Explore the most popular and happening clubs right now.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="service-card">
+                <h4>🎧 Explore by Vibe</h4>
+                <p>Choose clubs based on your mood – EDM, Lounge, Dance, or Luxury.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="service-card">
+                <h4>🍾 Night Planning Guide</h4>
+                <p>Plan your perfect night with timing, budget, and dress tips.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="service-card">
+                <h4>⭐ Top Rated Clubs</h4>
+                <p>Discover premium and highly rated clubs.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="service-card">
+                <h4>📍 Easy Navigation</h4>
+                <p>Find clubs by location quickly and easily.</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    
+    <!-- 🔥 CLUB FACILITIES -->
+    <div class="text-center mb-4">
+        <h2>Club Facilities & Experiences</h2>
+        <p class="text-secondary">What you can expect at top nightlife destinations</p>
+    </div>
+
+    <div class="row g-4">
+
+        <!-- Categories -->
+        <div class="col-md-6">
+            <div class="section-box">
+                <h4 class="section-title">🎯 Categories</h4>
+                <ul>
+                    <li>Attractions</li>
+                    <li>Nightlife</li>
+                    <li>Clubs & Bars</li>
+                    <li>Rooftop Lounges</li>
+                    <li>Live Music</li>
+                    <li>VIP Lounges</li>
+                    <li>Fine Dining</li>
+                    <li>After Hours</li>
+                    <li>Party Packages</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Food -->
+        <div class="col-md-6">
+            <div class="section-box">
+                <h4 class="section-title">🍹 Foods & Drinks</h4>
+                <ul>
+                    <li>Full bar service</li>
+                    <li>Signature cocktails</li>
+                    <li>Hookah / shisha</li>
+                    <li>Bottle service</li>
+                    <li>Wine & whiskey</li>
+                    <li>Veg & Non-Veg food</li>
+                    <li>Beer on tap</li>
+                    <li>Mocktails</li>
+                    <li>Snacks & finger foods</li>
+                    <li>Happy hours</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Guest -->
+        <div class="col-md-6">
+            <div class="section-box">
+                <h4 class="section-title">🏨 Guest Services</h4>
+                <ul>
+                    <li>VIP entry & reservations</li>
+                    <li>Table booking</li>
+                    <li>Private events</li>
+                    <li>Luxury washrooms</li>
+                    <li>Free Wi-Fi</li>
+                    <li>Smoking area</li>
+                    <li>Valet parking</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Safety -->
+        <div class="col-md-6">
+            <div class="section-box">
+                <h4 class="section-title">🛡 Safety & Security</h4>
+                <ul>
+                    <li>Security staff</li>
+                    <li>ID checks</li>
+                    <li>CCTV surveillance</li>
+                    <li>Emergency exits</li>
+                    <li>Women safety</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Special -->
+        <div class="col-12">
+            <div class="section-box">
+                <h4 class="section-title">🎉 Special Experiences</h4>
+                <ul class="row">
+                    <div class="col-md-4">
+                        <li>Ladies' nights</li>
+                        <li>Birthday packages</li>
+                        <li>Corporate parties</li>
+                    </div>
+                    <div class="col-md-4">
+                        <li>Bachelor parties</li>
+                        <li>Theme nights</li>
+                        <li>Celebrity DJs</li>
+                    </div>
+                    <div class="col-md-4">
+                        <li>Drink contests</li>
+                        <li>Photo booths</li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock body %}
