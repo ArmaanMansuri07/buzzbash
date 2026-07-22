@@ -1,46 +1,9 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block title %}Top Clubs in Gurugram{% endblock title %}
 
 {% block body %}
-
-<style>
-
-body{
-background:#000;
-color:white;
-}
-
-.club-card{
-display:flex;
-background:#111;
-margin:25px auto;
-border-radius:12px;
-overflow:hidden;
-box-shadow:0 8px 25px rgba(0,0,0,0.5);
-width:85%;
-transition:0.3s;
-}
-
-.club-card:hover{
-transform:scale(1.02);
-}
-
-.club-card img{
-width:320px;
-height:230px;
-object-fit:cover;
-}
-
-.club-info{
-padding:20px;
-}
-
-.club-info a{
-color:#ff4d6d;
-text-decoration:none;
-}
-
-</style>
+<link rel="stylesheet" href="{% static 'css/club.css' %}">
 
 <h1 class="text-center my-5">Top Clubs in Gurugram</h1>
 

@@ -1,35 +1,11 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block title %}Top Clubs in Noida{% endblock title %}
 
 {% block body %}
+<link rel="stylesheet" href="{% static 'css/club.css' %}">
 
-<style>
-    .club-card {
-        display: flex;
-        background: black;
-        margin: 20px auto;
-        border-radius: 12px;
-        overflow: hidden;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-        width: 85%;
-        transition: 0.3s;
-    }
 
-    .club-card:hover {
-        transform: scale(1.02);
-    }
-
-    .club-card img {
-        width: 300px;
-        height: 220px;
-        object-fit: cover;
-    }
-
-    .club-info {
-        padding: 20px;
-    }
-</style>
 
 <h1 class="text-center my-5">Top Clubs in Noida</h1>
 
